@@ -24,19 +24,21 @@ module.exports = {
       throw err;
       
       res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write(JSON.Stringify(users));
       
-      if(users[0].password == req.query.password)
-        {
-          res.redirect("/views/homepage.html");
-          res.end();
-        }
-      else
-        {
-          res.write("Wrong User");
-          res.end();
-        }
+      // if(users[0].password == req.query.password)
+      //   {
+      //     res.redirect('/views/homepage.html');
+      //     res.end();
+      //   }
+      // else
+      //   {
+      //     res.write("Wrong User");
+      //     res.end();
+      //   }
 
-    
+    res.end();
+      
     })
     
     

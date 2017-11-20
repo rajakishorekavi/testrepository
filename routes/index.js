@@ -6,9 +6,11 @@ module.exports = function(app){
   
     
   app.use(express.static("views"));
+  
   app.route('/').get(function(req,res){
     
-    res.redirect("/views/");
+   // res.redirect('/views/');
+    res.end("Hai");
     
   });
   
