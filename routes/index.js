@@ -1,6 +1,6 @@
 'use strict'
 const express = require('express');
-const usercontroller = require('/controller/usercontroller');
+const usercontroller = require('../controller/usercontroller');
 
 module.exports = function(app){
   
@@ -14,6 +14,8 @@ module.exports = function(app){
   
   app.route('/createUser').get(function(req,res){
     
+    usercontroller.createUser(req,res);
+    res.end("User Created");
     
     
   });
