@@ -14,6 +14,14 @@ module.exports = {
       throw err;
     });
     
+  },
+  
+  loginUser: function(req, res){
+    
+    
+    
+    
+    
   }
   
   
