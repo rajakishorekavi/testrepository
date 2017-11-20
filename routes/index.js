@@ -8,7 +8,7 @@ module.exports = function(app){
   app.use(express.static("views"));
   app.route('/').get(function(req,res){
     
-    res.rediret("/views/");
+    res.redirect("/views/");
     
   });
   
@@ -23,7 +23,7 @@ module.exports = function(app){
   app.route('/loginUser').get(function(req,res){
     
     usercontroller.loginUser(req,res);
-    res.end("Welcome");
+    
     
     
   });
