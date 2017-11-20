@@ -1,5 +1,6 @@
 'use strict'
 const express = require('express');
+const usercontroller = require('/controller/usercontroller');
 
 module.exports = function(app){
   
@@ -10,5 +11,12 @@ module.exports = function(app){
     res.rediret("/views/");
     
   });
+  
+  app.route('/createUser').get(function(req,res){
+    
+    
+    
+  });
+  
   
 }

@@ -1,18 +1,17 @@
 'use strict'
 
-var collection = require('../model/collection');
-var card = require('../model/card');
-var collectioncontroller = require('../controller/collectioncontroller');
+var user = require('../model/user');
 const mongoose = require('mongoose');
 
 module.exports = {
-  createCollection: function(req,res){
-    var newCollection = new collection();
-    newCollection.name = req.query.name;
+  createUser: function(req,res){
+    var newUser = new user();
+    newUser.username=req.query.username;
+    newUser.password=req.query.password;
     console.log(req.query.name);
     
     
-    newCollection.save(function(err){
+    newUser.save(function(err){
       if(err)
       throw err;
     })
@@ -20,3 +19,7 @@ module.exports = {
   
   
   
+  
+  
+  
+}
