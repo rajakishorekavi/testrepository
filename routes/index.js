@@ -1,11 +1,12 @@
 'use strict'
+
 const express = require('express');
-const usercontroller = require('../controller/usercontroller');
+var usercontroller = require('../controller/usercontroller');
 
 module.exports = function(app){
   
     
-  app.use(express.static("views"));
+  app.use(express.static('views'));
   
   app.route('/').get(function(req,res){
     

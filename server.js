@@ -10,6 +10,7 @@ mongoose.Promise = require('bluebird');
 
 mongoose.connect(process.env.MONGODB_URI,{useMongoClient: true/* other options */});
 console.log(mongoose.connection.readyState);
+
 routes(app);
 
 
