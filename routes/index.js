@@ -11,8 +11,11 @@ module.exports = function(app){
     
    // res.redirect('/static/');
     var a =1;
-    usercontroller.add(a,b,)
-   // res.end("Hai");
+    var b=2;
+    var c;
+    usercontroller.add(a,b,function(val){c =val; });
+    console.log(c);
+   res.end("Hai");
     
   });
   
