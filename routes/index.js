@@ -9,7 +9,7 @@ module.exports = function(app){
   
   app.route('/').get(function(req,res){
     
-    res.redirect('/static/homepage.html');
+    res.redirect('/static/');
    // res.end("Hai");
     
   });
@@ -25,6 +25,7 @@ module.exports = function(app){
   app.route('/loginUser').get(function(req,res){
     
     usercontroller.loginUser(req,res);
+    res.redirect('/static/homepage.html');
     
     
     
