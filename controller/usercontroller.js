@@ -23,7 +23,7 @@ module.exports = {
       if(err)
       throw err;
       
-      res.writeHead(200, {'Content-Type': 'text/html'});
+    //  res.writeHead(200, {'Content-Type': 'text/html'});
    //   res.write(JSON.stringify(users));
       
    //   res.write(users[0].username);
@@ -32,8 +32,7 @@ module.exports = {
       if(users[0].password == req.query.password)
         {
           res.redirect('/static/homepage.html');
-          res.end("Welcome user");
-          res.end();
+          
         }
       else
         {
