@@ -5,13 +5,12 @@ var usercontroller = require('../controller/usercontroller');
 
 module.exports = function(app){
   
-    
-  app.use(express.static('views'));
+   
   
   app.route('/').get(function(req,res){
     
-   // res.redirect('/views/');
-    res.end("Hai");
+    res.redirect('/static/');
+   // res.end("Hai");
     
   });
   
