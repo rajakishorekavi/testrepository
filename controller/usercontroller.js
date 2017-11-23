@@ -31,8 +31,8 @@ module.exports = {
       
       if(users[0].password == req.query.password)
         {
-         // res.redirect('/static/homepage.html');
-          res.end("Welcome user");
+          res.redirect('/static/homepage.html');
+         // res.end("Welcome user");
         }
       else
         {
