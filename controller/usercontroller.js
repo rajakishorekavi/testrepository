@@ -4,15 +4,13 @@ var user = require('../model/user');
 const mongoose = require('mongoose');
 
 module.exports = {
-  add: function(a,b,cb){
-    var ele = a+b;
-    var x;
-    cb(ele);
+//   add: function(a,b,cb){
+//     var ele = a+b;
+//     var x;
+//     cb(ele);
+//   },
+  createUser: function(req,res){
     
-    
-  },
-  createUser: function(req,res,cb){
-    cb();
     var newUser = new user();
     newUser.username=req.query.username;
     newUser.password=req.query.password;
