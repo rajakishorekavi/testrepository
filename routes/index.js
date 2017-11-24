@@ -30,7 +30,8 @@ module.exports = function(app){
   app.route('/loginUser').get(function(req,res){
     
     usercontroller.loginUser(req,res);
-   / res.redirect('/static/homepage.html');
+    res.end();
+   // res.redirect('/static/homepage.html');
     
     
     
