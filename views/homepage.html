@@ -3,9 +3,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-    var name = "{{ name }}";
-  console.log(name);
-        print name;
+     $.get("app", function(data, status){
+        $("h1").text("Username: " + data.username + "\nStatus: " + status);
     
 
 });
