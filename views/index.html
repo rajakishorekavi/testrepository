@@ -12,11 +12,19 @@
   <head>
     <title>Login</title>
     <script>
-    $.ajax({
-  url: 'https://perfect-may.glitch.me/static',
-  complete: function(data) {
-    console.log(data);
-  }
+    $.get( "/static/", function(loginData) {
+
+})
+  .done(function(data) {
+      if(data.status === 200) {
+          //logged in
+       $("hi").text("Hiiiii") ;
+      } else {
+          //logged out
+      }
+  })
+  .fail(function() {
+      //error (bad connection)
 });
     </script> 
     
