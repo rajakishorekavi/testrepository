@@ -37,7 +37,7 @@ module.exports = {
       
       if(users[0].password == req.query.password)
         {
-          res.redirect('/static/homepage.html');
+          res.sendFile('/static/homepage.html');
           
         }
       else
