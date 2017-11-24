@@ -39,6 +39,7 @@ module.exports = {
         {
          // res.render('/static/homepage.html', users);
           res.sendFile('/static/homepage.html');
+          res.end();
          // res.json({status: 200, message : "success"});
         }
       else
@@ -49,7 +50,7 @@ module.exports = {
 
     res.end();
       
-    })
+    });
     
     
     
