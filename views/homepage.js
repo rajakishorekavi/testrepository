@@ -2,17 +2,17 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function(){
-     $.get("/loginuser", function(data, status){
-        $("h1").text("Username: " + data.username + "\nStatus: " + status);
+//       $(document).ready(function(){
+//      $.get("/loginuser", function(data, status){
+//         $("h1").text("Username: " + data.username + "\nStatus: " + status);
     
 
-});
+// });
       
     
       
       
-</script>
+//</script>
     
   </head>
   
