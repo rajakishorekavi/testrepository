@@ -38,17 +38,15 @@ module.exports = {
       if(users[0].password == req.query.password)
         {
          // res.render('/static/homepage.html', users);
-          res.sendFile('/static/homepage.html');
+          res.sendFile('../static/homepage.html');
           res.end();
          // res.json({status: 200, message : "success"});
         }
       else
         {
-          res.write("Wrong User");
-          res.end();
+//          res.write("Wrong User");
+          res.end("Wrong user");
         }
-
-    res.end();
       
     });
     
