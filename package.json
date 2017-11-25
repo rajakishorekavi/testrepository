@@ -14,7 +14,8 @@
     "mongoose": "^4.13.0",
     "dotenv": "^4.0.0",
     "bluebird": "^3.5.1",
-    "fs": "^0.0.2"
+    "fs": "^0.0.2",
+    "express-handlebars": "^3.0.0"
   },
   "engines": {
     "node": "8.x"
