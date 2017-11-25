@@ -5,10 +5,16 @@ const routes = require('./routes');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-var exphbs  = require('express-handlebars');
+var hbs  = require('express-handlebars');
+const path = require('path');
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+/**
+ * common error in setting view engine with handle bar
+ * https://stackoverflow.com/questions/26454425/failed-to-lookup-view-in-directory-with-express-handlebars
+ */
+app.engine('hbs', hbs({extname: '.hbs'}));
+app.set('views', path.join(__dirname, '/views/'));
+app.set('view engine', 'hbs');
 
 
 

@@ -40,7 +40,7 @@ module.exports = {
       if(users[0].password == req.query.password)
         {
           console.log('i am called');
-        res.redirect('/static/homepage.html');
+        res.render('home',{title: req.query.username});
           //res.end('welcome user');
           
          // res.json({status: 200, message : "success"});
