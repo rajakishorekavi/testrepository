@@ -38,7 +38,7 @@ module.exports = {
       if(users[0].password == req.query.password)
         {
          // res.render('/static/homepage.html', users);
-          res.sendFile('../static/homepage.html');
+          res.redirect('/static/homepage.html');
           res.end();
          // res.json({status: 200, message : "success"});
         }
