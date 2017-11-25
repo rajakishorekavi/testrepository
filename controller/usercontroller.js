@@ -51,15 +51,10 @@ module.exports = {
           res.end("Wrong user");
         }
       
-    });
-    
-    
-    
+    });   
+  },
+  getUser: function(req,res){
+    user.find({})
   }
-  
-  
-  
-  
-  
   
 }
