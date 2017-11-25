@@ -34,12 +34,15 @@ module.exports = {
       
    //   res.write(users[0].username);
       
-      
+      console.log('i am called');
+      console.log(users[0]);
+      console.log(req.query.password);
       if(users[0].password == req.query.password)
         {
-         // res.render('/static/homepage.html', users);
-          res.redirect('/static/homepage.html');
-          res.end();
+          console.log('i am called');
+        res.redirect('/static/homepage.html');
+          //res.end('welcome user');
+          
          // res.json({status: 200, message : "success"});
         }
       else
